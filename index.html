@@ -20,21 +20,51 @@
             </div>
         </div>
     </div>
-    <audio id="audio" name="Audio" src="egodeath.mp3"></audio>
+    <div id="imgb" class="wrap2" onclick="playEven()" value="play()">
+        <div id="album2">
+            <div id="cover2">
+                <div id="print2">
+                </div>
+            </div>
+            <div id="vinyl2">
+                <div id="print2">
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="audio" src="egodeath.mp3"></audio>
+    <audio id="audiob" src="evenflo.mp3" volume="50%"></audio>
     <script>
         var audio = document.getElementById("audio");
         var img = document.getElementById("img");
-    
+
         function play() {
             audio.play();
         }
-    
+        
         function stop() {
         audio.pause();
         }
-    
+
         img.addEventListener('mouseover', play);
         img.addEventListener('mouseout', stop);
+
+        var audiob = document.getElementById("audiob");
+        var imgb = document.getElementById("imgb");
+    
+        function playEven() {
+            audiob.play('audiob');
+        }
+
+        function stopEven() {
+        audiob.pause();
+        }
+
+        imgb.addEventListener('mouseover', playEven);
+        imgb.addEventListener('mouseout', stopEven);
+    </script>
+    <script>
+        
     </script>
 </body>
 </html>
