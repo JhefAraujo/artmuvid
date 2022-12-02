@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Muvid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="img" class="wrap" onclick="play()" value="play()">
+        <div id="album">
+            <div id="cover">
+                <div id="print">
+                </div>
+            </div>
+            <div id="vinyl">
+                <div id="print">
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="audio" name="Audio" src="egodeath.mp3"></audio>
+    <script>
+        var audio = document.getElementById("audio");
+        var img = document.getElementById("img");
+    
+        function play() {
+            audio.play();
+        }
+    
+        function stop() {
+        audio.pause();
+        }
+    
+        img.addEventListener('mouseover', play);
+        img.addEventListener('mouseout', stop);
+    </script>
+</body>
+</html>

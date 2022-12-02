@@ -1,0 +1,72 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+
+html,body {
+	height: 100%;
+	background-image: url('http://s3.amazonaws.com/eyeworksgroupcdn/wp-content/uploads/2015/06/12043432/Silver-Blur-Background-Wallpaper.jpg');
+	background-size: cover;
+	overflow: hidden;
+}
+
+body {
+    background-color: rgb(20, 20, 20);
+}
+
+#album {
+	position: absolute;
+	top: 12.5%;
+	left: 12.5%;
+	height: 50vw;
+	width: 50%;
+	max-height: 75%;
+	max-width: 75vh;
+}
+#cover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-image: url(capa.jpg);
+	background-size: 100% 100%;
+	box-shadow: 5px 0 20px 0 rgba(0,0,0,0.6),
+	            inset 0 0 10px 5px rgba(255,255,255,0.2),
+			  inset 0 0 4px 2px rgba(0,0,0,0.2);
+	border-radius: 4px;
+}
+#vinyl {
+		position: absolute;
+		top: 2.5%;
+		left: 2.5%;
+		z-index: 0;
+		width: 95%;
+		height: 95%;
+		display: block;
+		background-image: url(vinil.png);
+		background-size: 106% 106%;
+		background-position: center;
+		box-shadow: 0 0 20px 4px rgba(0,0,0,0.6);
+		border-radius: 50%;
+		content: '';
+}
+
+.wrap:hover #vinyl {
+    animation: 5s linear giro infinite, 0.5s ease-in-out saida 1s forwards;
+}
+
+@keyframes saida {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: 50%;
+	}
+}
+@keyframes giro {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
