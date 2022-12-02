@@ -33,6 +33,11 @@ body {
 	max-height: 75%;
 	max-width: 75vh;
 }
+#cover::before {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
 #cover {
 	position: absolute;
 	top: 0;
