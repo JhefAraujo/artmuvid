@@ -7,14 +7,27 @@ html,body {
 	overflow: hidden;
 }
 
+@font-face {
+    font-family: cloister;
+    src: url(cloister.ttf);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    padding: 40px;
+    font-family: 'cloister';
+    font-size: 2.5em;
+}
+
 body {
     background-color: rgb(20, 20, 20);
 }
 
 #album {
 	position: absolute;
-	top: 12.5%;
-	left: 12.5%;
+	top: 22.5%;
+	left: 22.5%;
 	height: 50vw;
 	width: 50%;
 	max-height: 75%;
@@ -25,8 +38,8 @@ body {
 	top: 0;
 	left: 0;
 	z-index: 1;
-	width: 100%;
-	height: 100%;
+	width: 80%;
+	height: 80%;
 	background-image: url(capa.jpg);
 	background-size: 100% 100%;
 	box-shadow: 5px 0 20px 0 rgba(0,0,0,0.6),
@@ -39,8 +52,8 @@ body {
 		top: 2.5%;
 		left: 2.5%;
 		z-index: 0;
-		width: 95%;
-		height: 95%;
+		width: 75%;
+		height: 75%;
 		display: block;
 		background-image: url(vinil.png);
 		background-size: 106% 106%;
