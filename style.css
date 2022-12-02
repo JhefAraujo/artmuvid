@@ -26,8 +26,8 @@ body {
 
 #album {
 	position: absolute;
-	top: 22.5%;
-	left: 22.5%;
+	top: 12.5%;
+	left: 12.5%;
 	height: 50vw;
 	width: 50%;
 	max-height: 75%;
@@ -38,8 +38,8 @@ body {
 	top: 0;
 	left: 0;
 	z-index: 1;
-	width: 80%;
-	height: 80%;
+	width: 100%;
+	height: 100%;
 	background-image: url(capa.jpg);
 	background-size: 100% 100%;
 	box-shadow: 5px 0 20px 0 rgba(0,0,0,0.6),
@@ -52,8 +52,8 @@ body {
 		top: 2.5%;
 		left: 2.5%;
 		z-index: 0;
-		width: 75%;
-		height: 75%;
+		width: 95%;
+		height: 95%;
 		display: block;
 		background-image: url(vinil.png);
 		background-size: 106% 106%;
