@@ -33,11 +33,6 @@ body {
 	max-height: 75%;
 	max-width: 75vh;
 }
-#cover::before {
-    height: 100%;
-    width: 100%;
-    background-color: black;
-}
 #cover {
 	position: absolute;
 	top: 0;
@@ -48,7 +43,7 @@ body {
 	background-image: url(capa.jpg);
 	background-size: 100% 100%;
 	box-shadow: 5px 0 20px 0 rgba(0,0,0,0.6),
-	            inset 0 0 10px 5px rgba(255,255,255,0.2),
+	            inset 0 0 5px 5px rgba(255, 255, 255, 0.1),
 			  inset 0 0 4px 2px rgba(0,0,0,0.2);
 	border-radius: 4px;
 }
